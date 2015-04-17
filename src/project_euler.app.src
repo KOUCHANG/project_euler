@@ -1,0 +1,12 @@
+%% vim: set ft=erlang : -*- erlang -*-
+{application, project_euler,
+ [
+  {description, "for Project Euler"},
+  {vsn, git},
+  {registered, []}, % 予め使用することが分かっているプロセス名を列挙する (もし存在するなら)
+  {applications, [ % project_eulerが直接依存しているアプリケーション群を列挙する
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
